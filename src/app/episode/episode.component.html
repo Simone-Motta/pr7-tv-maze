@@ -1,0 +1,18 @@
+<top-bar></top-bar>
+
+<a routerLink="'/detail/' + id" routerLinkActive="active" ariaCurrentWhenActive="page" href="#" class="btn btn-dark rounded-pill" (click)="viewDetail(id)">Detail</a>
+<a routerLink="'/episode/' + id" routerLinkActive="active" ariaCurrentWhenActive="page" href="#" class="btn btn-dark rounded-pill">Episode</a>
+
+<h2 class="text-center m-3">Episode :</h2>
+
+<!-- <div *ngIf="episodesBySeason | async as episodesBySeason">
+  <div *ngFor="let season of episodesBySeason | keyvalue">
+    <h2>Season {{ season.key }}</h2>
+    <ul>
+      <li *ngFor="let episode of season.value">
+        {{ episode.name }}
+      </li>
+    </ul>
+  </div>
+</div>  -->
+

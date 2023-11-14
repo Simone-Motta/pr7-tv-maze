@@ -1,0 +1,20 @@
+<top-bar></top-bar>
+
+<h3 class="m-3 text-center">Shows :</h3>
+<!-- <input class="m-3" type="search" placeholder="Search" [(ngModel)]="search">
+<button class="m-3" type="button" (click)="searchByShowName(search)">Search</button> -->
+
+<div class="container">
+  <div class="row">
+    <div class="col" *ngFor="let show of shows">   
+      <div class="card mb-3" style="width: 18rem;">
+        <img [src]="show.show.image.medium" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <a routerLink="/detail/:idShow" routerLinkActive="active" ariaCurrentWhenActive="page" href="#" class="btn btn-dark rounded-pill" (click)="viewDetail(show.show.id)">{{ show.show.name }}</a>
+        </div>
+      </div> 
+    </div>
+  </div>
+</div>
+
+

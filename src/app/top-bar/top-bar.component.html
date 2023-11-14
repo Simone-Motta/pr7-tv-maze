@@ -1,0 +1,9 @@
+<nav class="navbar navbar-expand-lg">
+    <div class="container-fluid d-flex justify-content-center">
+      <a class="navbar-brand" href="#">
+        <img src="https://static.tvmaze.com/images/tvm-header-logo.png" alt="Show search" width="290px" height="40px" class="mx-auto">
+      </a>
+      <input class="m-3" type="search" placeholder="Search your show..." [(ngModel)]="search" [value]="search">
+      <button class="m-3" type="button" routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page" (click)="passNomeShow(search)">Search</button>
+    </div>
+</nav>

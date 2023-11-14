@@ -1,0 +1,23 @@
+<top-bar></top-bar>
+
+<a routerLink="'/detail/' + id" routerLinkActive="active" ariaCurrentWhenActive="page" href="#" class="btn btn-dark rounded-pill">Detail</a>
+<a routerLink="/episode/:idShow" routerLinkActive="active" ariaCurrentWhenActive="page" href="#" class="btn btn-dark rounded-pill" (click)="viewEpisodeList(shows.id)">Episode</a>
+
+<div  class="container mt-2">
+    <div class="row">
+        <div class="col-4">
+            <h2>{{ shows.name }}</h2>
+            <figure>
+                <img [src]="shows.image.medium" alt="">
+            </figure>
+        </div>
+        <div class="col-5">
+            <h2>Summary</h2>
+            <p>{{ shows.summary }}</p>
+        </div>
+        <div class="col-3">
+            <h2>Info</h2>
+            <p>Network: <a [href]="shows.network.officialSite" target="_blank">{{ shows.network.name }}</a></p>
+        </div>
+    </div>    
+</div>

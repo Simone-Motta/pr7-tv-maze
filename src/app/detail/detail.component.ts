@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { ActivatedRoute, Router } from '@angular/router';
 
-import { DrinkService } from '../_services/drink.service';
+import { DrinkService } from '../_services/show.service';
 
 import { Drink } from '../model/drink.model';
 
@@ -36,9 +36,9 @@ export class DetailComponent implements OnInit {
 
   }
 
-  viewEpisodeList(id: number) {
-    this.router.navigate(['/episode', id])
-    console.log("Id2 passato")
-  }
+  // viewEpisodeList(id: number) {
+  //   this.router.navigate(['/episode', id])
+  //   console.log("Id2 passato")
+  // }
 
 }

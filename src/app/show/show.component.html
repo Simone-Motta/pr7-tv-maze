@@ -1,0 +1,13 @@
+<top-bar></top-bar>
+
+<div class="text-center">
+    <button class="btn btn-dark rounded-pill mt-3" (click)="viewDetail()">DETAIL</button>
+    <button class="btn btn-dark rounded-pill mt-3" (click)="viewEpisode()">EPISODE</button>
+</div>
+
+<div *ngIf="viewDetailFlag">
+    <app-detail></app-detail>
+</div>
+<div *ngIf="viewEpisodeFlag">
+    <app-episode></app-episode>
+</div>

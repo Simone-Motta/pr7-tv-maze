@@ -7,11 +7,12 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { HomeComponent } from './home/home.component';
+import { ShowComponent } from './show/show.component';
 import { DetailComponent } from './detail/detail.component';
 import { EpisodeComponent } from './episode/episode.component';
 
 import { ApiService } from './_services/api.service';
-import { DrinkService } from './_services/drink.service';
+import { DrinkService } from './_services/show.service';
 
 @NgModule({
   imports: [
@@ -25,6 +26,7 @@ import { DrinkService } from './_services/drink.service';
     AppComponent,
     TopBarComponent,
     HomeComponent,
+    ShowComponent,
     DetailComponent,
     EpisodeComponent
   ],

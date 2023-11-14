@@ -1,6 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { ActivatedRoute, Router } from "@angular/router";
-import { DrinkService } from "../_services/drink.service";
+import { DrinkService } from "../_services/show.service";
 
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
@@ -12,7 +12,7 @@ import { map } from 'rxjs/operators';
 
 export class EpisodeComponent implements OnInit {
 
-    episode: any = [];
+    episodes: any = [];
     id: number = 0;
     
     constructor(private route: ActivatedRoute, private drinkService: DrinkService, private router: Router) {}
@@ -29,7 +29,7 @@ export class EpisodeComponent implements OnInit {
               this.id = showId;
               this.drinkService.getEpisodeShow(showId).subscribe((response: any) => {
                 console.log(response);
-                this.episode = response;
+                this.episodes = response;
               })  
             }
           
@@ -37,10 +37,10 @@ export class EpisodeComponent implements OnInit {
         
     }
 
-    viewDetail(id: number) {
-      this.router.navigate(['/detail', id])
-      console.log("Id passato")
-    }
+    // viewDetail(id: number) {
+    //   this.router.navigate(['/detail', id])
+    //   console.log("Id passato")
+    // }
 
 }
 

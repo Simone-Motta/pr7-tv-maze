@@ -10,7 +10,7 @@
       <div class="card mb-3" style="width: 18rem;">
         <img [src]="show.show.image.medium" class="card-img-top" alt="...">
         <div class="card-body text-center">
-          <a routerLink="/detail/:idShow" routerLinkActive="active" ariaCurrentWhenActive="page" href="#" class="btn btn-dark rounded-pill" (click)="viewDetail(show.show.id)">{{ show.show.name }}</a>
+          <a routerLink="/show/:idShow" routerLinkActive="active" ariaCurrentWhenActive="page" href="#" class="btn btn-dark rounded-pill" (click)="viewDetail(show.show.id)">{{ show.show.name }}</a>
         </div>
       </div> 
     </div>

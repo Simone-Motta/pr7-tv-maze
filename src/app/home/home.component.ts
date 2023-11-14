@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 
 import { ApiService } from '../_services/api.service';
-import { DrinkService } from '../_services/drink.service';
+import { DrinkService } from '../_services/show.service';
 
 import { Drink } from '../model/drink.model';
 
@@ -36,7 +36,7 @@ export class HomeComponent implements OnInit {
   }
 
   viewDetail(id: number) {
-    this.router.navigate(['/detail', id])
+    this.router.navigate(['/show', id])
     console.log("Id passato")
   }
   

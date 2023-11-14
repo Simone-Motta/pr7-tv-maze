@@ -2,7 +2,7 @@ import { Component, OnInit } from "@angular/core";
 import { Router } from '@angular/router';
 
 import { ApiService } from '../_services/api.service';
-import { DrinkService } from '../_services/drink.service';
+import { DrinkService } from '../_services/show.service';
 
 @Component({
   selector: 'top-bar',

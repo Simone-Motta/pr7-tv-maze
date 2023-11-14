@@ -1,9 +1,16 @@
-<top-bar></top-bar>
-
-<a routerLink="'/detail/' + id" routerLinkActive="active" ariaCurrentWhenActive="page" href="#" class="btn btn-dark rounded-pill" (click)="viewDetail(id)">Detail</a>
-<a routerLink="'/episode/' + id" routerLinkActive="active" ariaCurrentWhenActive="page" href="#" class="btn btn-dark rounded-pill">Episode</a>
 
 <h2 class="text-center m-3">Episode :</h2>
+
+<div *ngFor="let episode of episodes">
+  <div class="row row-cols-2 m-3">
+    <div class="col-4">
+      <img src="{{episode.image.medium}}" class="" alt="">
+    </div>
+    <div class="col-6">
+      <h2>{{episode.name}}</h2>
+    </div>
+  </div>
+</div>
 
 <!-- <div *ngIf="episodesBySeason | async as episodesBySeason">
   <div *ngFor="let season of episodesBySeason | keyvalue">
